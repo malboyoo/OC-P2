@@ -1,0 +1,29 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  --blue: #0065fc;
+  --light-blue: #deebff;
+  --gray: #f2f2f2;
+  --font-family: "Raleway", sans-serif;
+}
+
+/* generals - base */
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+}
+
+.blue {
+  color: var(--blue);
+}
+.gray {
+  color: #d9d9d9;
+}
