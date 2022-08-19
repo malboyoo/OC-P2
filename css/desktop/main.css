@@ -6,20 +6,25 @@ main {
 
 /* article top */
 
-.top-article h1,
+.top-article h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
 .top-article .hint {
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 /* localization finder  */
 .localization-finder {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 50px;
   /* border: 2px solid var(--gray); */
   border-radius: 15px;
   overflow: hidden;
-  max-width: 450px;
+  max-width: 420px;
 }
 
 .localization-finder button,
@@ -66,7 +71,7 @@ input {
 /* filter container */
 
 .filter-container {
-  margin: 40px 0;
+  margin: 30px 0 35px 0;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -168,7 +173,7 @@ input {
   display: block;
   margin-left: 20px;
   margin-top: 25px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -178,6 +183,7 @@ input {
 .card-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   margin-top: 10px;
 }
 
@@ -229,7 +235,7 @@ input {
 }
 
 .star-container i {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* populaires */
@@ -237,17 +243,19 @@ input {
 .popular {
   display: flex;
   flex-flow: column nowrap;
-  width: 420px;
+  max-width: 420px;
   height: 625px;
   background: var(--gray);
   border-radius: 20px;
   padding: 30px;
+  margin-right: 40px;
 }
 
 .popular-card {
   display: flex;
   flex-flow: row nowrap;
-  width: 345px;
+  max-width: 345px;
+  min-width: 292px;
   height: 145px;
   margin-top: 30px;
 }
@@ -257,10 +265,14 @@ input {
   justify-content: space-between;
 }
 
+.popular-header h2 {
+  font-size: 22px;
+}
+
 .popular-header i {
   font-size: 24px;
   line-height: 1.2;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .popular-card h3 {
@@ -297,6 +309,7 @@ input {
 #activites {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .activities-large {

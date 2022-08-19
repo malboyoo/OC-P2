@@ -5,12 +5,11 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
+  height: 125px;
 }
 
 .logo img {
-  width: 100px;
-  height: 50px;
+  width: 90px;
   margin-left: 60px;
 }
 
@@ -31,7 +30,8 @@ nav a {
   color: black;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:active {
   border-top: 3px solid var(--blue);
   color: var(--blue);
   font-weight: 700;
