@@ -1,7 +1,7 @@
 /* main */
 
 main {
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 /* article top */
@@ -89,7 +89,6 @@ input {
   align-items: center;
   position: relative;
   height: 100%;
-  list-style-type: none;
   margin: 10px;
   border: 2px solid var(--gray);
   border-radius: 40px;
@@ -153,7 +152,6 @@ input {
 
 #hebergement {
   width: 880px;
-  height: 625px;
   background: var(--gray);
   border-radius: 20px;
   padding: 20px;
@@ -180,15 +178,14 @@ input {
 .card-container {
   display: flex;
   flex-flow: row wrap;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .card {
   background: white;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transition: all 0.4s ease-in-out;
-  padding: 3px;
+  padding: 4px;
 }
 
 .main-card {
@@ -201,7 +198,11 @@ input {
   margin: 15px;
 }
 
-.card:hover {
+.card-animation {
+  transition: all 0.4s ease-in-out;
+}
+
+.card-animation:hover {
   transform: scale(1.03);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -254,12 +255,12 @@ input {
 .popular-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
 }
 
 .popular-header i {
   font-size: 24px;
   line-height: 1.2;
+  margin-right: 15px;
 }
 
 .popular-card h3 {
@@ -279,4 +280,131 @@ input {
 }
 .popular-card .star-container {
   margin-top: 35px;
+}
+
+/* Activities large */
+
+.bottom-article {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.bottom-article h3 {
+  flex-basis: 56px;
+  padding: 20px 0 0 20px;
+}
+
+#activites {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.activities-large {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  height: 445px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  margin-right: 45px;
+  margin-top: 25px;
+}
+
+.activities-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 300px;
+  height: 445px;
+  margin-right: 45px;
+  margin-top: 25px;
+}
+
+.activities-large img {
+  flex: 1;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Activities pomegues */
+
+.activities-pomegues {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  height: 235px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.activities-pomegues img {
+  flex: 1;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Activities frioul */
+
+.activities-frioul {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  height: 165px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.activities-frioul img {
+  flex: 1;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Activities notre-dame */
+
+.activities-notre-dame {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  height: 195px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.activities-notre-dame img {
+  flex: 1;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* activities longchamp */
+
+.activities-longchamp {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  height: 210px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.activities-longchamp img {
+  flex: 1;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
 }
