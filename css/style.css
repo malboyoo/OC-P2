@@ -48,7 +48,7 @@ header {
 
 .logo img {
   width: 90px;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 nav {
@@ -118,6 +118,7 @@ input {
   padding: 0 15px;
   font-size: 20px;
   cursor: pointer;
+  border: 2px solid var(--gray) !important;
 }
 
 .city-input {
@@ -144,6 +145,7 @@ input {
   flex-basis: 40%;
   height: 100%;
   padding: 0 10px;
+  border: 2px solid var(--blue) !important;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color: white;
@@ -296,12 +298,13 @@ input {
   transform: scale(1.03);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .main-card img {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
-  height: 57%;
+  height: 58%;
 }
 
 .card h3 {
@@ -376,6 +379,10 @@ input {
 }
 .popular-card .star-container {
   margin-top: 35px;
+}
+
+.popular .star-container {
+  margin-left: 15px;
 }
 
 /* Activities large */

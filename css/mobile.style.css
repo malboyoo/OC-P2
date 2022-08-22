@@ -113,19 +113,27 @@ main {
   width: 100%;
 }
 
+.popular-header {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 .popular {
   margin: 0;
   width: 100%;
   border-radius: 0;
-  padding: 20px;
+  padding: 40px 20px 35px 20px;
+  align-items: center;
 }
 
 .popular-card {
   display: flex;
   flex-flow: row nowrap;
-  min-width: 100%;
+  min-width: 335px;
+  max-width: 335px;
   height: 145px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .popular-content {
@@ -152,11 +160,12 @@ main {
 
 .card-container {
   flex-flow: column nowrap;
-  align-items: stretch;
+  align-items: center;
 }
 
 .main-card {
-  width: 100%;
+  min-width: 335px;
+  max-width: 400px;
   height: 200px;
   margin: 0 0 20px 0;
 }
@@ -170,10 +179,15 @@ main {
   object-fit: cover;
 }
 
+.show-more {
+  margin-left: 0;
+}
+
 /* activities */
 
 #activites {
   flex-flow: column nowrap;
+  align-items: center;
 }
 
 .bottom-container {
@@ -183,14 +197,16 @@ main {
 .activities-large {
   margin: 0;
   margin-top: 30px;
-  width: 100%;
+  min-width: 335px;
+  max-width: 400px;
   height: 200px;
 }
 
 .activities-box {
   margin: 0;
   margin-top: 30px;
-  width: 100%;
+  min-width: 335px;
+  max-width: 400px;
   height: 100%;
 }
 
