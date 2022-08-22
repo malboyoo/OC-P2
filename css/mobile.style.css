@@ -1,0 +1,231 @@
+/* generals / basics */
+
+h2,
+h1 {
+  text-align: left;
+}
+
+/* header */
+
+header {
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+.logo img {
+  width: 90px;
+  margin: 30px auto;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid white;
+  padding: 15px;
+}
+
+nav a:hover {
+  border: none;
+  border-bottom: 3px solid var(--blue);
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* main */
+
+main {
+  margin: 0;
+  margin-top: 35px;
+}
+
+/*  SEARCH BAR */
+
+.search {
+  margin: 0 25px;
+}
+
+.fa-magnifying-glass {
+  display: block;
+}
+.search-btn::before {
+  content: "";
+}
+
+.search-btn {
+  flex-basis: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.current-localization-btn {
+  flex-basis: 50px;
+  padding: 0;
+}
+
+.city-input {
+  max-width: 225px;
+}
+
+.search .hint {
+  margin-bottom: 30px;
+}
+
+/* Filters */
+
+.filter-container {
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.filter-container ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.filter-container ul li {
+  margin: 5px 10px 5px 0;
+}
+
+.filter-container ul li span {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 55px;
+  padding-right: 10px;
+}
+
+/* middle-container */
+
+.middle-container {
+  flex-flow: column-reverse;
+  margin: 0;
+  width: 100%;
+}
+
+.popular {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 20px;
+}
+
+.popular-card {
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 100%;
+  height: 145px;
+  margin-top: 30px;
+}
+
+.popular-content {
+  max-width: 100%;
+}
+
+.popular-card img {
+  width: 40%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.popular-text {
+  margin-left: 0px;
+}
+
+/* hebergement */
+
+#hebergement {
+  background: white;
+}
+
+.card-container {
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.main-card {
+  width: 100%;
+  height: 200px;
+  margin: 0 0 20px 0;
+}
+
+#hebergement h2 {
+  margin-bottom: 20px;
+}
+
+.main-card img {
+  height: 57%;
+  object-fit: cover;
+}
+
+/* activities */
+
+#activites {
+  flex-flow: column nowrap;
+}
+
+.bottom-container {
+  margin: 0 25px 50px 25px;
+}
+
+.activities-large {
+  margin: 0;
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+}
+
+.activities-box {
+  margin: 0;
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.activities-pomegues {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.activities-frioul {
+  margin: 0;
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+}
+
+.activities-notre-dame {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.activities-longchamp {
+  margin: 0;
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+}
+
+/* footer */
+
+footer {
+  flex-flow: column nowrap;
+}
+
+.footer-box {
+  margin: 20px 0;
+}
