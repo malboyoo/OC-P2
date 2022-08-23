@@ -130,7 +130,7 @@ main {
 .popular-card {
   display: flex;
   flex-flow: row nowrap;
-  min-width: 335px;
+  min-width: 300px;
   max-width: 335px;
   height: 145px;
   margin-top: 15px;
