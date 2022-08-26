@@ -7,7 +7,7 @@ h1 {
 
 /* header */
 
-header {
+.header-container {
   flex-flow: column nowrap;
   height: 100%;
 }
@@ -96,7 +96,7 @@ main {
 }
 
 .filter-container ul li {
-  margin: 5px 10px 5px 0;
+  margin: 5px 15px 5px 0;
 }
 
 .filter-container ul li span {
@@ -104,6 +104,10 @@ main {
   font-weight: bold;
   padding-left: 55px;
   padding-right: 10px;
+}
+
+.fa-info {
+  transform: translateY(-2px);
 }
 
 /* middle-container */
@@ -239,8 +243,9 @@ main {
 
 /* footer */
 
-footer {
+.footer-container {
   flex-flow: column nowrap;
+  align-items: flex-start;
 }
 
 .footer-box {

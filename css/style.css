@@ -39,11 +39,8 @@ body {
 
 /* header */
 
-header {
-  margin: 0 auto;
-}
-
 .header-container {
+  margin: 0 auto;
   max-width: 1440px;
   display: flex;
   flex-flow: row nowrap;
@@ -88,10 +85,13 @@ main {
   flex-flow: column nowrap;
   justify-content: center;
   margin: 0 auto;
-  margin-left: 50px;
 }
 
 /* article top */
+
+.search {
+  margin: 0 40px;
+}
 
 .search h1 {
   font-size: 22px;
@@ -231,9 +231,9 @@ input {
 .info-text i {
   text-align: center;
   vertical-align: middle;
-  line-height: 1.5;
+  line-height: 1.4;
   margin-right: 10px;
-
+  transform: translateY(-2px);
   height: 25px;
   width: 25px;
   border: 2px solid var(--gray);
@@ -247,6 +247,7 @@ input {
 .middle-container {
   display: flex;
   justify-content: flex-start;
+  margin: 0 40px;
 }
 
 /* hebergement */
@@ -257,6 +258,7 @@ input {
   border-radius: 20px;
   padding: 20px;
   margin-right: 40px;
+  transition: all 0.4s ease-in-out;
 }
 
 #hebergement h2 {
@@ -301,7 +303,7 @@ input {
 }
 
 .card-animation {
-  transition: all 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, padding 0.4s, margin 0.4s;
 }
 
 .card-animation:hover {
@@ -344,7 +346,6 @@ input {
   max-width: 420px;
   height: 625px;
   padding: 30px;
-  margin-right: 40px;
   border-radius: 20px;
   background: var(--gray);
 }
@@ -399,8 +400,7 @@ input {
 /* Activities large */
 
 .bottom-container {
-  margin-top: 60px;
-  margin-bottom: 50px;
+  margin: 60px 0 50px 40px;
 }
 
 .bottom-container h3 {
@@ -527,12 +527,7 @@ input {
 /* footer */
 
 footer {
-  display: flex;
-  justify-content: flex-start;
-  min-height: 225px;
-  width: 100%;
-  padding-left: 50px;
-  padding-top: 50px;
+  margin: 0 auto;
   background: var(--gray);
 }
 
@@ -550,4 +545,31 @@ footer {
 
 .footer-box li a:hover {
   color: var(--blue);
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 225px;
+  max-width: 1440px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+/* responsive adjustment on desktop */
+
+@media only screen and (min-width: 993px) and (max-width: 1085px) {
+  #hebergement {
+    padding: 20px 8px;
+    margin-right: 20px;
+  }
+
+  .main-card {
+    margin: 15px 5px;
+  }
+
+  .filter-container ul li {
+    margin: 10px 7px;
+  }
 }
